@@ -1,0 +1,36 @@
+package kz.kbtu.sis4.dto;
+
+import jakarta.validation.constraints.*;
+import lombok.Data;
+
+import java.util.Date;
+
+@Data
+public class AddEventDto {
+    @NotBlank(message = "An event's name must not be empty")
+    @Size(min = 2, max = 255, message = "A name of an event must be between 2 and 255 characters")
+    String name;
+
+    @NotBlank(message = "A description of an event must not be empty")
+    @Size(min = 10, max = 255, message = "A description of an event must be between 10 and 255 characters")
+    String description;
+
+    @NotBlank(message = "A location must not be empty")
+    @Size(max = 255, message = "A location of an event must be no more than 255 characters")
+    String location;
+
+    @NotNull(message = "A date must not be empty")
+    Date date;
+
+    @NotNull(message = "A price must not be empty")
+    @PositiveOrZero(message = "A price must be positive or zero")
+    Float price;
+
+    @NotNull(message = "A count of people must not be empty")
+    @PositiveOrZero(message = "A count of people must be positive or zero")
+    Integer totalPeople;
+
+    @NotBlank(message = "A organization name must not be empty")
+    @Size(max = 255)
+    String organizationName;
+}

@@ -1,0 +1,1 @@
+ALTER TABLE init_events ADD COLUMN total_people INTEGER DEFAULT 0;
