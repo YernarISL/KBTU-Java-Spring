@@ -37,7 +37,7 @@ We have 3 interfaces: StudentService, CourseService and TeacherService. Each of 
 ## 3. Example of a query with pagination:
 ![Pagination](/screenshots/Postman_vpO78QzOMm.png)
 
-## 🛠 Getting Started Guide
+## Getting Started Guide
 1. Clone the repository.
 2. Start PostgreSQL (via Docker or locally).
 3. Configure `application.properties` (database URL, username, password).
