@@ -18,7 +18,7 @@ Global exception handling is implemented using `@ControllerAdvice`. All error-ha
 3. Configure `application.yml` (database URL, username, password).
 4. Run the application
 
-## SIS-5: Working with Swagger, Student Management System
+# SIS-5: Working with Swagger, Student Management System
 ## 1. Architecture and Structure
 The project is divided into layers to ensure low coupling:
 - **Controller**: Processing HTTP requests and validating incoming data.
